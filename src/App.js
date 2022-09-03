@@ -1,4 +1,5 @@
 import {Counter} from "./Counter";
+import { Todo } from "./Todo";
 
 const HelloWorld = ({name, items}) => {
   console.log(name);
@@ -13,7 +14,7 @@ const HelloWorld = ({name, items}) => {
 }
 
 
-function App() {
+const App = () => {
 
 
   return (
@@ -27,8 +28,9 @@ function App() {
           name={'Zaza'}
           items={['mouse toy', 'claws', 'buddha']}
         />
-        <Counter />
       </div>
+      <Counter />
+      <Todo />
     </div>
   );
 }
